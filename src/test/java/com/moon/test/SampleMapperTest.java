@@ -20,4 +20,10 @@ public class SampleMapperTest {
 		System.out.println(mapper.getClass().getName());
 		System.out.println(mapper.getTime());
 	}
+	
+	@Test
+	public void testMail() {
+		String email = mapper.getEmail("user10", "user10");
+		System.out.println(email);
+	}
 }
